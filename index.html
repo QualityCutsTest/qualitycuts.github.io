@@ -1,0 +1,1358 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css'>
+
+		<title>Zeplin Guitar</title>
+
+		<style type="text/css">
+				  
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  position: relative;
+  font-size: 1px;
+  min-height: 100%;
+}
+
+html,
+body {
+  font-size: 1px;
+}
+
+body {
+  background: #ebbd8a;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.main {
+  z-index: 1;
+  position: relative;
+  width: 490rem;
+  height: 420rem;
+  margin: 50rem auto;
+}
+.main:before, .main:after {
+  content: '';
+  position: absolute;
+}
+
+.flag {
+  position: relative;
+  width: 355rem;
+  height: 40rem;
+  margin: auto;
+  text-align: center;
+}
+.flag div:nth-child(1) {
+  position: absolute;
+  left: 25rem;
+  bottom: 0;
+  height: 35rem;
+  width: 4rem;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  background: #2d0000;
+}
+.flag div:nth-child(2) {
+  position: absolute;
+  right: 25rem;
+  bottom: 0;
+  height: 35rem;
+  width: 4rem;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  background: #2d0000;
+}
+.flag div:nth-child(3) {
+  position: absolute;
+  top: 9rem;
+  left: 6rem;
+  width: 0;
+  height: 0;
+  border-top: 8rem solid transparent;
+  border-right: 19rem solid #2d0000;
+  border-bottom: 8rem solid transparent;
+}
+.flag div:nth-child(4) {
+  position: absolute;
+  top: 9rem;
+  right: 6rem;
+  width: 0;
+  height: 0;
+  border-top: 8rem solid transparent;
+  border-left: 19rem solid #2d0000;
+  border-bottom: 8rem solid transparent;
+}
+.flag div:nth-child(5) {
+  position: absolute;
+  top: 13rem;
+  left: 13rem;
+  width: 0;
+  height: 0;
+  border-top: 4rem solid transparent;
+  border-right: 12rem solid #f1b777;
+  border-bottom: 4rem solid transparent;
+}
+.flag div:nth-child(6) {
+  position: absolute;
+  top: 13rem;
+  right: 13rem;
+  width: 0;
+  height: 0;
+  border-top: 4rem solid transparent;
+  border-left: 12rem solid #f1b777;
+  border-bottom: 4rem solid transparent;
+}
+
+.roof {
+  position: relative;
+  width: 340rem;
+  height: 17rem;
+  margin: auto;
+  text-align: center;
+}
+.roof div:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 340rem;
+  height: 10rem;
+  background: #9e5a41;
+  border: 2rem solid #2d0000;
+  border-top-radius: 1rem 1rem 0 0;
+}
+.roof div:nth-child(1):before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 6rem;
+  border: 1rem solid #6b332a;
+}
+.roof div:nth-child(2) {
+  position: absolute;
+  top: 9rem;
+  left: 5rem;
+  width: 330rem;
+  height: 8rem;
+  background: #844e42;
+  border: 2rem solid #461110;
+}
+
+.second_floor {
+  position: relative;
+  width: 320rem;
+  /*WAS height: 128rem;, 100rem, 90rem*/
+  height: 82rem;
+  margin: auto;
+  text-align: center;
+  /*BRICK FOR SECOND FLOOR*/
+  /*WAS url(http://alexshy.ru/barber-shop-css/brick.png)*/
+  background: url(http://alexshy.ru/barber-shop-css/brick.png);
+  border-left: 3rem solid #2c0000;
+  border-right: 3rem solid #2c0000;
+}
+.second_floor:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-left: 1rem solid #6b332a;
+  border-right: 1rem solid #6b332a;
+}
+.second_floor .second_floor-first {
+  position: absolute;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  top: -2rem;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  padding: 0 10rem;
+  background: #5c2d21;
+  opacity: 0.8;
+}
+.second_floor .second_floor-first #banner {
+  position: relative;
+  /*WAS 28px, 18px, 14px*/
+  top: 15px;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  padding: 0px;
+  margin: 0px;
+}
+.second_floor .second_floor-first div {
+  width: 11rem;
+  height: 11rem;
+  background: #a05e46;
+  border: 2rem solid #461110;
+}
+
+.roof-first {
+  position: relative;
+  width: 340rem;
+  height: 8rem;
+  margin: auto;
+  text-align: center;
+}
+.roof-first .first_floor_roof {
+  z-index: 1;
+  position: absolute;
+  left: 5rem;
+  width: 330rem;
+  height: 8rem;
+  background: #9f5c43;
+  box-shadow: inset 1px 1px 1px #af6a4e;
+  border: 2px solid #461110;
+}
+.roof-first .second_floor-first {
+  z-index: 1;
+  position: absolute;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  top: 6rem;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  padding: 0 10rem;
+  background: #5c2d21;
+  opacity: 0.8;
+}
+.roof-first .second_floor-first div {
+  width: 11rem;
+  height: 11rem;
+  background: #a05e46;
+  border: 2rem solid #461110;
+}
+
+.first_floor {
+  position: relative;
+  width: 320rem;
+  height: 175rem;
+  margin: auto;
+  text-align: center;
+  /*BRICK OF 1ST FLOOR HOUSE*/
+  /*WAS http://alexshy.ru/barber-shop-css/brick.png*/
+  background: url(http://alexshy.ru/barber-shop-css/brick.png);
+  border-left: 3rem solid #2c0000;
+  border-right: 3rem solid #2c0000;
+  /*TEXT*/
+  /* MOVE THE SECOND FLOOR UP */
+  /* BARBER POLE */
+}
+.first_floor .first_floor_box_center {
+  position: absolute;
+  bottom: 0;
+  left: 20rem;
+  height: 155rem;
+  background: #ddaf7a;
+  border: 2rem solid #400b0e;
+  border-bottom: 0;
+  /*RECTANGLE UNTOP OF DOOR*/
+}
+.first_floor .first_floor_box_center .first_floor_box_center_roof {
+  width: 100%;
+  height: 6rem;
+  background: #9f5d45;
+  border-bottom: 2px solid #643631;
+}
+.first_floor .first_floor_box_center .first_floor_box_section-wrapper {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.first_floor .first_floor_box_center .first_floor_box_section {
+  display: inline-block;
+  width: 100rem;
+  vertical-align: top;
+  margin-top: 3rem;
+  /* SIZE OF WINDOW */
+  /* SIZE OF GLASS IN WINDOW */
+  /*BLINDS*/
+  /* BRICKS UNDER WINDOW */
+  /* END OF BRICKS UNDER WINDOW */
+}
+.first_floor .first_floor_box_center .first_floor_box_section .box-window {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  background: #8f4d38;
+  border: 2rem solid #38030b;
+  /* RECTANGLES ON TOP OF WINDOW */
+}
+.first_floor .first_floor_box_center .first_floor_box_section .box-window .box-line {
+  height: 2rem;
+  width: 13rem;
+  background: #38030b;
+  display: block;
+  position: absolute;
+}
+.first_floor .first_floor_box_center .first_floor_box_section .box-window .box-line:nth-child(1) {
+  transform: rotate(45deg);
+  top: 3rem;
+  left: -2rem;
+}
+.first_floor .first_floor_box_center .first_floor_box_section .box-window .box-line:nth-child(2) {
+  transform: rotate(315deg);
+  top: 11rem;
+  left: -2rem;
+}
+.first_floor .first_floor_box_center .first_floor_box_section .box-window .box-line:nth-child(3) {
+  transform: rotate(45deg);
+  top: 11rem;
+  right: -2rem;
+}
+.first_floor .first_floor_box_center .first_floor_box_section .box-window .box-line:nth-child(4) {
+  transform: rotate(315deg);
+  top: 3rem;
+  right: -2rem;
+}
+.first_floor .first_floor_box_center .first_floor_box_section .box-window .box-pr {
+  z-index: 1;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  width: 80rem;
+  height: 10rem;
+  background: #daad7a;
+  border: 2rem solid #38030b;
+}
+.first_floor .first_floor_box_center .first_floor_box_section .box-window-center {
+  position: relative;
+  width: 100%;
+  /* HEIGHT OF WINDOW, WAS 60rem */
+  height: 100px;
+  margin-top: 3rem;
+  background: #8f4d38;
+  border: 2rem solid #38030b;
+  border-bottom: 1rem solid #672c22;
+}
+.first_floor .first_floor_box_center .first_floor_box_section .box-window-open {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 78px;
+  /* HEIGHT OF GLASS IN WINDOW, WAS 48px */
+  height: 88px;
+  background: linear-gradient(to bottom, #fdf5e3, #f8dcbc);
+  border: 2px solid #360404;
+  box-shadow: 0 0 1px #7b3e31;
+}
+.first_floor .first_floor_box_center .first_floor_box_section .box-window-open:before {
+  content: '';
+  border-top: 0rem solid transparent;
+  border-left: 41rem solid #f3d1a5;
+  border-bottom: 41rem solid transparent;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  opacity: 0.7;
+}
+.first_floor .first_floor_box_center .first_floor_box_section .box-window-open:after {
+  content: '';
+  border-bottom: 0rem solid transparent;
+  border-right: 41rem solid #f3d1a5;
+  border-top: 41rem solid transparent;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  opacity: 0.8;
+}
+.first_floor .first_floor_box_center .first_floor_box_section .box-window-center-bottom {
+  height: 24rem;
+  width: 100%;
+  background: #d18a65;
+  border: 2px solid #38030b;
+}
+.first_floor .first_floor_box_center .first_floor_box_section .box-window-open-blinds {
+  z-index: 5;
+  position: absolute;
+  /* was 0 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* WAS height: 46; */
+  height: 46px;
+  background: #8a5448;
+  border-bottom: 2px solid #451213;
+  /*BLINDS MOVING UP & DOWN, WAS 6S*/
+  animation: open-window 6s linear infinite;
+  -o-animation: open-window 6s linear infinite;
+  -ms-animation: open-window 6s linear infinite;
+  -moz-animation: open-window 6s linear infinite;
+  -webkit-animation: open-window 6s linear infinite;
+}
+.first_floor .first_floor_box_center .first_floor_box_section .box-window-open-blinds .box-window-open-blinds-pen {
+  position: absolute;
+  /* BLINDS PULLER STRING HEIGHT */
+  height: 4px;
+  left: 50%;
+  top: 6px;
+  width: 2px;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  background: #240000;
+  /*BLINDS PULLER*/
+  animation: open-window-pen 6s linear infinite;
+  -o-animation: open-window-pen 6s linear infinite;
+  -ms-animation: open-window-pen 6s linear infinite;
+  -moz-animation: open-window-pen 6s linear infinite;
+  -webkit-animation: open-window-pen 6s linear infinite;
+  /* BLINDS PULLER STRING BALL */
+}
+.first_floor .first_floor_box_center .first_floor_box_section .box-window-open-blinds .box-window-open-blinds-pen:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: -3px;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #d0c1ad;
+  border: 2px solid #310000;
+}
+.first_floor .first_floor_box_center .first_floor_box_section .box-window-bottom-level-1 .box-window-bottom-item {
+  width: 100%;
+  height: 8rem;
+  background: #ac6a51;
+  border: 2rem solid #38030b;
+  border-left: 0;
+  border-right: 0;
+}
+.first_floor .first_floor_box_center .first_floor_box_section .box-window-bottom-level-1 .box-window-bottom-item:nth-child(2) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: #4e1a18;
+  border-top: 1rem solid #471716;
+  border-bottom: 1rem solid #471716;
+}
+.first_floor .first_floor_box_center .first_floor_box_section .box-window-bottom-level-1 .box-window-bottom-item:nth-child(2) .box-window-bottom-item-v {
+  background: #d28a65;
+  display: inline-block;
+  height: 100%;
+  width: 7%;
+}
+.first_floor .first_floor_box_center .first_floor_box_section .box-window-bottom-level-3-l {
+  position: absolute;
+  width: 38px;
+  height: 15px;
+  background: #7f493e;
+  z-index: 1;
+  right: -35px;
+  bottom: 0;
+  border: 2px solid #2c0000;
+}
+.first_floor .first_floor_box_center .first_floor_box_section .box-window-bottom-level-3-r {
+  position: absolute;
+  width: 38px;
+  height: 15px;
+  background: #7f493e;
+  z-index: 1;
+  left: -36px;
+  bottom: 0;
+  border: 2px solid #2c0000;
+}
+.first_floor .first_floor_box_center .first_floor_box_section-center {
+  display: inline-block;
+  width: 56rem;
+  margin: 5rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 3rem;
+  /* DOOR */
+  /* DOOR HANDLE */
+  /* WINDOW ON DOOR */
+  /* WRAPPER AROUND WINDOW ON DOOR */
+}
+.first_floor .first_floor_box_center .first_floor_box_section-center .box-window {
+  width: 100%;
+  height: 20rem;
+  border: 2rem solid #38030b;
+}
+.first_floor .first_floor_box_center .first_floor_box_section-center .box-window .box-pr {
+  width: 45rem;
+}
+.first_floor .first_floor_box_center .first_floor_box_section-center .box-window-center {
+  height: 96rem;
+  background: url(http://alexshy.ru/barber-shop-css/door.png);
+}
+.first_floor .first_floor_box_center .first_floor_box_section-center .box-window-center:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  background: #3c080b;
+}
+.first_floor .first_floor_box_center .first_floor_box_section-center .box-window-pen {
+  position: absolute;
+  top: 55px;
+  /* WAS right: 7px; */
+  left: 7px;
+  height: 18px;
+  width: 6px;
+  border: 2px solid #38030b;
+  border-radius: 2px;
+  background: #bc7a5b;
+  box-shadow: 0 0 1px #7b3e31;
+}
+.first_floor .first_floor_box_center .first_floor_box_section-center .box-door-window {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  width: 38px;
+  height: 45px;
+  background: #fecf8d;
+  border: 2px solid #350006;
+  box-shadow: 0 0 1px #7b3e31;
+}
+.first_floor .first_floor_box_center .first_floor_box_section-center .box-door-window-wrapper {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 30px;
+  height: 37px;
+  background: #fffff0;
+  border: 2px solid #2b0000;
+}
+.first_floor .first_floor_box_center .first_floor_box_section-center .box-door-window-wrapper:before {
+  content: '';
+  border-top: 0rem solid transparent;
+  border-left: 23rem solid #fcedce;
+  border-bottom: 23rem solid transparent;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+.first_floor .first_floor_box_center .first_floor_box_section-center .box-door-window-wrapper:after {
+  content: '';
+  border-bottom: 0rem solid transparent;
+  border-right: 18rem solid #fceccd;
+  border-top: 18rem solid transparent;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+}
+.first_floor .first_floor_box {
+  position: relative;
+  width: 300rem;
+  height: 175rem;
+  margin: auto;
+  text-align: center;
+}
+.first_floor .first_floor_lamp {
+  z-index: 1;
+  position: absolute;
+  /*MOVE BARBER POLE UP AND DOWN, WAS 15rem;*/
+  top: 15rem;
+  background: red;
+}
+div
+.first_floor .first_floor_lamp:nth-child(1) {
+  /*LEFT BARBER POLE BALL*/
+  background: #fde2c7;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  border: 2rem solid #360606;
+  box-shadow: 0 0 10rem rgba(255, 255, 244, 0.8);
+  animation: shadow 3s linear infinite;
+  -o-animation: shadow 3s linear infinite;
+  -ms-animation: shadow 3s linear infinite;
+  -moz-animation: shadow 3s linear infinite;
+  -webkit-animation: shadow 3s linear infinite;
+}
+.first_floor .first_floor_lamp:nth-child(2) {
+  background: #fde2c7;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  border: 2rem solid #360606;
+  box-shadow: 0 0 10rem rgba(255, 255, 244, 0.8);
+  animation: shadow 3s linear infinite;
+  -o-animation: shadow 3s linear infinite;
+  -ms-animation: shadow 3s linear infinite;
+  -moz-animation: shadow 3s linear infinite;
+  -webkit-animation: shadow 3s linear infinite;
+}
+.first_floor .first_floor_lamp .first_floor_lamp_top {
+  /*WAS #8b5447*/
+  background: #fde2c7;
+  width: 15rem;
+  height: 7rem;
+  top: 9rem;
+  position: absolute;
+  left: -3rem;
+  border: 2rem solid #582725;
+}
+.first_floor .first_floor_lamp .first_floor_lamp_beam {
+  /*CHANGES CREAM SPIRALING COLOR IN POLE WAS #ffb281*/
+  background: #fde2c7;
+  position: absolute;
+  height: 35rem;
+  width: 11rem;
+  top: 16rem;
+  left: -1rem;
+  border: 2rem solid #582725;
+  /*STRIPES IN SPIRALING BARBER POLE, WAS #290001*/
+  background-image: linear-gradient(45deg, #FF0000 25%, transparent 25%, transparent 50%, #0000FF 50%, #FF0000 75%, transparent 75%, transparent);
+  background-position: 0rem -244rem;
+  background-size: 10rem 10rem;
+  animation: stripes 3s linear infinite;
+  -o-animation: stripes 3s linear infinite;
+  -ms-animation: stripes 3s linear infinite;
+  -moz-animation: stripes 3s linear infinite;
+  -webkit-animation: stripes 3s linear infinite;
+}
+.first_floor .first_floor_lamp .first_floor_lamp_bottom {
+  z-index: 1;
+  /*WAS #8b5447*/
+  background: #fde2c7;
+  width: 15rem;
+  height: 7rem;
+  top: 51rem;
+  position: absolute;
+  left: -3rem;
+  border: 2rem solid #582725;
+}
+.first_floor .first_floor_lamp .first_floor_lamp_circle {
+  background: #fde2c7;
+  width: 13rem;
+  height: 13rem;
+  border: 2rem solid #360606;
+  box-shadow: 0rem 7rem 9rem rgba(255, 255, 244, 0.3);
+  position: absolute;
+  top: 52rem;
+  left: -2rem;
+  border-radius: 0 0 50% 50%;
+  animation: shadow_bottom 3s linear infinite;
+  -o-animation: shadow_bottom 3s linear infinite;
+  -ms-animation: shadow_bottom 3s linear infinite;
+  -moz-animation: shadow_bottom 3s linear infinite;
+  -webkit-animation: shadow_bottom 3s linear infinite;
+}
+.first_floor .first_floor_lamp_right {
+  right: 0;
+}
+.first_floor .first_floor_lamp_left {
+  left: 0;
+}
+
+/* END OF BARBER POLE*/
+.floor {
+  position: relative;
+}
+.floor .floor-center {
+  position: relative;
+  width: 365rem;
+  height: 11rem;
+  background: #a66751;
+  margin: auto;
+  text-align: center;
+  border: 2rem solid #310000;
+}
+.floor .floor-top {
+  position: relative;
+  width: 335rem;
+  height: 3rem;
+  margin: auto;
+  margin-top: -1rem;
+  background: #fdcf8b;
+  border: 1rem solid #310000;
+}
+.floor .floor-top:before {
+  content: '';
+  border-left: 19rem solid transparent;
+  border-right: 0rem solid transparent;
+  border-top: 0rem solid #37060a;
+  position: absolute;
+  top: -4rem;
+  left: -16rem;
+  border-bottom: 6rem solid #37060a;
+}
+.floor .floor-top:after {
+  content: '';
+  border-right: 19rem solid transparent;
+  border-left: 0rem solid transparent;
+  border-top: 0rem solid #37060a;
+  position: absolute;
+  top: -4rem;
+  right: -16rem;
+  border-bottom: 6rem solid #37060a;
+}
+.floor .floor-bottom {
+  position: relative;
+  /*WAS 400rem,380rem*/
+  width: 370rem;
+  margin: auto;
+  text-align: center;
+  border: 2rem solid #290000;
+  border-radius: 10rem 10rem 0 0;
+}
+
+/*TEXT ON TOP IN WINDOW*/
+.letter {
+  text-transform: uppercase;
+  font-size: 11rem;
+  text-align: center;
+  /*WAS inline-block*/
+  display: block;
+  /*WAS relative*/
+  position: relative;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  /* WAS 15rem */
+  top: 10rem;
+  z-index: 1;
+  font-weight: bold;
+  color: #340a0b;
+  /*CSS FOR EACH LETTER LEFT WINDOW*/
+}
+
+.letter-full {
+  z-index: 1;
+  position: absolute;
+  top: 25rem;
+  left: 23rem;
+  font-size: 11rem;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: #340a0b;
+}
+
+/*---------------------------
+      ANIMATION
+---------------------------*/
+/* SPEED OF STRIPES */
+@keyframes stripes {
+  0% {
+    background-position: 0 0;
+  }
+  /* WAS 60rem */
+  100% {
+    background-position: 90rem 0;
+  }
+}
+@-o-keyframes stripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 60rem 0;
+  }
+}
+@-ms-keyframes stripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 60rem 0;
+  }
+}
+@-moz-keyframes stripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 60rem 0;
+  }
+}
+@-webkit-keyframes stripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 60rem 0;
+  }
+}
+@keyframes shadow {
+  0% {
+    box-shadow: 0 0 3rem rgba(255, 255, 244, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 10rem rgba(255, 255, 244, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 3rem rgba(255, 255, 244, 0.8);
+  }
+}
+@-o-keyframes shadow {
+  0% {
+    box-shadow: 0 0 3rem rgba(255, 255, 244, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 10rem rgba(255, 255, 244, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 3rem rgba(255, 255, 244, 0.8);
+  }
+}
+@-ms-keyframes shadow {
+  0% {
+    box-shadow: 0 0 3rem rgba(255, 255, 244, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 10rem rgba(255, 255, 244, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 3rem rgba(255, 255, 244, 0.8);
+  }
+}
+@-moz-keyframes shadow {
+  0% {
+    box-shadow: 0 0 3rem rgba(255, 255, 244, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 10rem rgba(255, 255, 244, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 3rem rgba(255, 255, 244, 0.8);
+  }
+}
+@-webkit-keyframes shadow {
+  0% {
+    box-shadow: 0 0 3rem rgba(255, 255, 244, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 10rem rgba(255, 255, 244, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 3rem rgba(255, 255, 244, 0.8);
+  }
+}
+@keyframes shadow_bottom {
+  0% {
+    box-shadow: 0rem 3rem 9rem rgba(255, 255, 244, 0.3);
+  }
+  50% {
+    box-shadow: 0rem 7rem 9rem rgba(255, 255, 244, 0.3);
+  }
+  100% {
+    box-shadow: 0rem 3rem 9rem rgba(255, 255, 244, 0.3);
+  }
+}
+@-o-keyframes shadow_bottom {
+  0% {
+    box-shadow: 0rem 3rem 9rem rgba(255, 255, 244, 0.3);
+  }
+  50% {
+    box-shadow: 0rem 7rem 9rem rgba(255, 255, 244, 0.3);
+  }
+  100% {
+    box-shadow: 0rem 3rem 9rem rgba(255, 255, 244, 0.3);
+  }
+}
+@-ms-keyframes shadow_bottom {
+  0% {
+    box-shadow: 0rem 3rem 9rem rgba(255, 255, 244, 0.3);
+  }
+  50% {
+    box-shadow: 0rem 7rem 9rem rgba(255, 255, 244, 0.3);
+  }
+  100% {
+    box-shadow: 0rem 3rem 9rem rgba(255, 255, 244, 0.3);
+  }
+}
+@-moz-keyframes shadow_bottom {
+  0% {
+    box-shadow: 0rem 3rem 9rem rgba(255, 255, 244, 0.3);
+  }
+  50% {
+    box-shadow: 0rem 7rem 9rem rgba(255, 255, 244, 0.3);
+  }
+  100% {
+    box-shadow: 0rem 3rem 9rem rgba(255, 255, 244, 0.3);
+  }
+}
+@-webkit-keyframes shadow_bottom {
+  0% {
+    box-shadow: 0rem 3rem 9rem rgba(255, 255, 244, 0.3);
+  }
+  50% {
+    box-shadow: 0rem 7rem 9rem rgba(255, 255, 244, 0.3);
+  }
+  100% {
+    box-shadow: 0rem 3rem 9rem rgba(255, 255, 244, 0.3);
+  }
+}
+/* LENGTH OF BLINDS*/
+/* 0% WAS 86rem, 
+   80% WAS 86rem, 
+   100% WAS 86rem */
+@keyframes open-window {
+  /* WAS 46rem; */
+  0% {
+    height: 86rem;
+  }
+  20% {
+    height: 6rem;
+  }
+  60% {
+    height: 6rem;
+  }
+  /* WAS 46rem; */
+  80% {
+    height: 86rem;
+  }
+  /* WAS 46rem; */
+  100% {
+    height: 86rem;
+  }
+}
+@-o-keyframes open-window {
+  0% {
+    height: 86rem;
+  }
+  20% {
+    height: 6rem;
+  }
+  60% {
+    height: 6rem;
+  }
+  80% {
+    height: 86rem;
+  }
+  100% {
+    height: 86rem;
+  }
+}
+@-ms-keyframes open-window {
+  0% {
+    height: 86rem;
+  }
+  20% {
+    height: 6rem;
+  }
+  60% {
+    height: 6rem;
+  }
+  80% {
+    height: 86rem;
+  }
+  100% {
+    height: 86rem;
+  }
+}
+@-moz-keyframes open-window {
+  0% {
+    height: 86rem;
+  }
+  20% {
+    height: 6rem;
+  }
+  60% {
+    height: 6rem;
+  }
+  80% {
+    height: 86rem;
+  }
+  100% {
+    height: 86rem;
+  }
+}
+@-webkit-keyframes open-window {
+  0% {
+    height: 86rem;
+  }
+  20% {
+    height: 6rem;
+  }
+  60% {
+    height: 6rem;
+  }
+  80% {
+    height: 86rem;
+  }
+  100% {
+    height: 86rem;
+  }
+}
+/* BLINDS PULLER */
+@keyframes open-window-pen {
+  0% {
+    top: 86rem;
+  }
+  20% {
+    top: 6rem;
+  }
+  60% {
+    top: 6rem;
+  }
+  80% {
+    top: 86rem;
+  }
+  100% {
+    top: 86rem;
+  }
+}
+@-o-keyframes open-window-pen {
+  0% {
+    top: 86rem;
+  }
+  20% {
+    top: 6rem;
+  }
+  60% {
+    top: 6rem;
+  }
+  80% {
+    top: 86rem;
+  }
+  100% {
+    top: 86rem;
+  }
+}
+@-ms-keyframes open-window-pen {
+  0% {
+    top: 86rem;
+  }
+  20% {
+    top: 6rem;
+  }
+  60% {
+    top: 6rem;
+  }
+  80% {
+    top: 86rem;
+  }
+  100% {
+    top: 86rem;
+  }
+}
+@-moz-keyframes open-window-pen {
+  0% {
+    top: 86rem;
+  }
+  20% {
+    top: 6rem;
+  }
+  60% {
+    top: 6rem;
+  }
+  80% {
+    top: 86rem;
+  }
+  100% {
+    top: 86rem;
+  }
+}
+@-webkit-keyframes open-window-pen {
+  0% {
+    top: 86rem;
+  }
+  20% {
+    top: 6rem;
+  }
+  60% {
+    top: 6rem;
+  }
+  80% {
+    top: 86rem;
+  }
+  100% {
+    top: 86rem;
+  }
+}
+
+
+		</style>
+	</head>
+
+<body>
+	<div class="main">
+		<div class="cloud-box">
+			<div class="cloud cloud-x1"></div>
+			<div class="cloud cloud-x2"></div>
+			<div class="cloud cloud-x3"></div>
+			<div class="cloud cloud-x4"></div>
+			<div class="cloud cloud-x5"></div>
+			<div class="cloud cloud-x6"></div>
+		</div>
+		<div class="flag">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="roof">
+			<div></div>
+			<div></div>
+		</div>
+    
+    
+    
+<!--     SECOND FLOOR -->
+		<div class="second_floor">
+			<div class="second_floor-first">
+<!-- BEST PLACE TO FIT BANNER -->
+				<div>
+          <img id="banner" src="https://68.media.tumblr.com/616efbe5eab1b77db56d0502db514716/tumblr_og69iwNUQE1s56abvo1_500h.jpg" width="290px">
+        </div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+      
+      
+      
+      
+      
+      
+      
+      
+		</div>
+    
+    
+    
+    
+<!--     FIRST FLOOR -->
+    
+    
+    
+    
+    
+<!--  THE ROOF OF FIRST FLOOR -->
+    
+<!-- 		<div class="roof-first">
+			<div class="first_floor_roof"></div>
+			<div class="second_floor">
+				<div class="second_floor-first">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div> -->
+    
+<!-- THE END OF FIRST FLOOR ROOF -->
+    
+    
+		<div class="first_floor">
+			<div class="first_floor_box">
+				<div class="first_floor_lamp first_floor_lamp_left">
+					<div class="first_floor_lamp_top"></div>
+					<div class="first_floor_lamp_beam"></div>
+					<div class="first_floor_lamp_bottom"></div>
+					<div class="first_floor_lamp_circle"></div>
+				</div>
+				<div class="first_floor_lamp first_floor_lamp_right">
+					<div class="first_floor_lamp_top"></div>
+					<div class="first_floor_lamp_beam"></div>
+					<div class="first_floor_lamp_bottom"></div>
+					<div class="first_floor_lamp_circle"></div>
+				</div>
+				<div class="first_floor_box_center">
+					<div class="first_floor_box_center_roof"></div>
+          
+          
+          
+          
+<!--           RECTANGLES ON TOP -->
+					<div class="first_floor_box_section">
+						<div class="first_floor_box_section-wrapper">
+							<div class="box-window">
+								<div class="box-line"></div>
+								<div class="box-line"></div>
+								<div class="box-line"></div>
+								<div class="box-line"></div>
+								<div class="box-pr"></div>
+							</div>
+							<div class="box-window-center">
+								<div class="box-window-open">
+									<div class="box-window-open-blinds">
+										<div class="box-window-open-blinds-pen"></div>
+									</div>
+									<div class="text">
+										<div class="letter"><img src="https://68.media.tumblr.com/1960344da97f2a8ce0f8c040c0f0f3e9/tumblr_oged7q4EjD1s56abvo1_540.png" width="70px" height="70px"></div>
+<!-- 								<div class="letter">u</div>
+										<div class="letter">a</div>
+										<div class="letter">l</div>
+										<div class="letter">i</div>
+										<div class="letter">t</div>
+                    <div class="letter">y</div>
+										<p class="letter-full">Shop</p> -->
+									</div>
+								</div>
+							</div>
+						</div>
+            
+            
+<!--             BELOW THE BOX WINDOW LEFT -->
+            
+<!--             BRICK UNDER WINDOW -->
+            
+						<div class="box-window-bottom-level-1">
+							<div class="box-window-bottom-item"></div>
+							<div class="box-window-bottom-item">
+								<div class="box-window-bottom-item-v"></div>
+								<div class="box-window-bottom-item-v"></div>
+								<div class="box-window-bottom-item-v"></div>
+								<div class="box-window-bottom-item-v"></div>
+								<div class="box-window-bottom-item-v"></div>
+								<div class="box-window-bottom-item-v"></div>
+								<div class="box-window-bottom-item-v"></div>
+								<div class="box-window-bottom-item-v"></div>
+								<div class="box-window-bottom-item-v"></div>
+								<div class="box-window-bottom-item-v"></div>
+								<div class="box-window-bottom-item-v"></div>
+							</div>
+							<div class="box-window-bottom-item"></div>
+						</div>
+            
+            
+<!-- 						<div class="box-window-bottom-level-2">
+							<div class="box-window-bottom-level-item"></div>
+						</div> -->
+            
+            
+<!-- 						<div class="box-window-bottom-level-3"></div> -->
+            
+						<div class="box-window-bottom-level-3-r"></div>
+					</div>
+          
+          
+					<div class="first_floor_box_section first_floor_box_section-center">
+						<div class="box-window">
+							<div class="box-line"></div>
+							<div class="box-line"></div>
+							<div class="box-line"></div>
+							<div class="box-line"></div>
+							<div class="box-pr"></div>
+						</div>
+						<div class="box-window-center">
+							<div class="box-door-window">
+								<div class="box-door-window-wrapper"></div>
+							</div>
+							<div class="box-window-pen"></div>
+						</div>
+						<div class="box-window-center-bottom"></div>
+					</div>
+					<div class="first_floor_box_section">
+						<div class="first_floor_box_section-wrapper">
+							<div class="box-window">
+								<div class="box-line"></div>
+								<div class="box-line"></div>
+								<div class="box-line"></div>
+								<div class="box-line"></div>
+								<div class="box-pr"></div>
+							</div>
+							<div class="box-window-center">
+								<div class="box-window-open">
+                  
+<!--                   RIGHT BLINDS -->
+									<div class="box-window-open-blinds">
+										<div class="box-window-open-blinds-pen"></div>
+									</div>
+                  
+                  
+									<div class="text">
+										<div class="letter"><img src="https://68.media.tumblr.com/1960344da97f2a8ce0f8c040c0f0f3e9/tumblr_oged7q4EjD1s56abvo1_540.png" width="71px" height="70px"></div>
+<!-- 								<div class="letter">u</div>
+										<div class="letter">a</div>
+										<div class="letter">l</div>
+										<div class="letter">i</div>
+										<div class="letter">t</div>
+                    <div class="letter">y</div>
+										<p class="letter-full">Shop</p> -->
+									</div>
+                  
+                  
+								</div>
+							</div>
+						</div>
+            
+            
+<!--             BELOW THE BOX WINDOW RIGHT -->
+            
+            
+						<div class="box-window-bottom-level-1">
+								<div class="box-window-bottom-item"></div>
+								<div class="box-window-bottom-item">
+									<div class="box-window-bottom-item-v"></div>
+									<div class="box-window-bottom-item-v"></div>
+									<div class="box-window-bottom-item-v"></div>
+									<div class="box-window-bottom-item-v"></div>
+									<div class="box-window-bottom-item-v"></div>
+									<div class="box-window-bottom-item-v"></div>
+									<div class="box-window-bottom-item-v"></div>
+									<div class="box-window-bottom-item-v"></div>
+									<div class="box-window-bottom-item-v"></div>
+									<div class="box-window-bottom-item-v"></div>
+									<div class="box-window-bottom-item-v"></div>
+								</div>
+								<div class="box-window-bottom-item"></div>
+						</div>
+            
+<!-- 						<div class="box-window-bottom-level-2">
+							<div class="box-window-bottom-level-item"></div>
+						</div> -->
+            
+            
+<!-- 						<div class="box-window-bottom-level-3"></div> -->
+            
+            
+						<div class="box-window-bottom-level-3-l"></div>
+            
+            
+<!--            END OF BELOW BOX WINDOW   -->
+            
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="floor">
+			<div class="floor-top"></div>
+			<div class="floor-center"></div>
+			<div class="floor-bottom"></div>
+		</div>
+	</div>
+</body>
+</html>
